@@ -2,11 +2,10 @@ import mysql.connector
 
 def create_database():
     try:
-        # Connect to MySQL server (change user and password accordingly)
         connection = mysql.connector.connect(
             host="localhost",
-            user="root",  # Change if using a different user
-            password="yourpassword"  # Change to your MySQL password
+            user="root",  
+            password="yourpassword" 
         )
         
         if connection.is_connected():
@@ -14,7 +13,7 @@ def create_database():
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
             print("Database 'alx_book_store' created successfully!")
     
-    except mysql.connector.Error as e:  # Explicitly using mysql.connector.Error
+    except mysql.connector.Error as e:  
         print(f"Error: {e}")
     
     finally:
