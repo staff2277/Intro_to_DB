@@ -3,11 +3,10 @@ from mysql.connector import Error
 
 def create_database():
     try:
-        # Connect to MySQL server (change user and password accordingly)
         connection = mysql.connector.connect(
             host="localhost",
-            user="root",  # Change if using a different user
-            password="yourpassword"  # Change to your MySQL password
+            user="root",  
+            password="yourpassword" 
         )
         
         if connection.is_connected():
