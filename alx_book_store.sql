@@ -1,4 +1,4 @@
-CREATE DATABASE alx_book_store;
+CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
 
 CREATE TABLE Authors (
@@ -18,7 +18,7 @@ CREATE TABLE Books (
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
     customer_name VARCHAR(215),
-    email VARCHAR(215),
+    email VARCHAR(215) UNIQUE,
     address TEXT  
 );
 
