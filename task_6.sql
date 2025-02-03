@@ -5,5 +5,4 @@ VALUES
     (4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.');
 
 
--- Optional: Check if the data was inserted correctly
 SELECT * FROM customer WHERE customer_id IN (2, 3, 4); 
